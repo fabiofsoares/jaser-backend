@@ -11,7 +11,7 @@ const { mainRouter }    = require('./routes/main.router');
     Variables
 */
 const port = process.env.PORT;
-const host = 'https://jaser-app.herokuapp.com/';
+const host = process.env.HOST;
 const server = express();
 const db = require('./services/db');
 

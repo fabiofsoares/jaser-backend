@@ -9,7 +9,7 @@ Import
 Mongoose config
 */
     const initClient = () => {
-        mongoose.connect( 'mongodb+srv://fabio:fabio123@jaser-app-ungm7.mongodb.net/jaser-app/jaser-bd' ).then(
+        mongoose.connect( process.env.MONGO_URL ).then(
             () => console.log('Mongoose is alive'),
             (error) => console.error('Unable to connect to mongoose', error)
         )
