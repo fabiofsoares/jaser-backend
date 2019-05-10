@@ -10,8 +10,8 @@ const { mainRouter }    = require('./routes/main.router');
 /*
     Variables
 */
-const port = process.env.PORT || 8080;
-const host = process.env.HOST;
+const port = 8080;
+const host = 'https://jaser-app.herokuapp.com/';
 const server = express();
 const db = require('./services/db');
 

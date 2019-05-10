@@ -2,14 +2,14 @@
 Import
 */
     const mongoose = require('mongoose');
-    //const url = 'mongodb+srv://fabio:fabio123@jaser-app-ungm7.mongodb.net/jaser-bd'
+    const MONGO_URL = 'mongodb+srv://fabio:fabio123@jaser-app-ungm7.mongodb.net/jaser-bd'
 //
 
 /*
 Mongoose config
 */
     const initClient = () => {
-        mongoose.connect( process.env.MONGO_URL ).then(
+        mongoose.connect( MONGO_URL ).then(
             () => console.log('Mongoose is alive'),
             (error) => console.error('Unable to connect to mongoose', error)
         )
