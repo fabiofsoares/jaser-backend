@@ -31,7 +31,7 @@ const init = () => {
     server.use('/', mainRouter);
 
     //Lunch
-    server.listen( host, () => {
+    server.listen(port, host, () => {
         console.log(`Server is running on ${host}`)
     });
 };
