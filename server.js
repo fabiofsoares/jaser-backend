@@ -15,7 +15,6 @@ const host = process.env.HOST;
 const server = express();
 const db = require('./services/db');
 
-
 /*
     Server 
 */
