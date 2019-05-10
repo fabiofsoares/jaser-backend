@@ -10,7 +10,7 @@ const { mainRouter }    = require('./routes/main.router');
 /*
     Variables
 */
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const host = process.env.HOST;
 const server = express();
 const db = require('./services/db');
@@ -31,7 +31,7 @@ const init = () => {
     server.use('/', mainRouter);
 
     //Lunch
-    server.listen(port, host, () => {
+    server.listen(port, () => {
         console.log(`Server is running on ${host}`)
     });
 };
