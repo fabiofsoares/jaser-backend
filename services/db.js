@@ -9,7 +9,7 @@ Import
 Mongoose config
 */
     const initClient = () => {
-        mongoose.connect( MONGO_URL ).then(
+        mongoose.connect( MONGO_URL, { useNewUrlParser: true } ).then(
             () => console.log('Mongoose is alive'),
             (error) => console.error('Unable to connect to mongoose', error)
         )
