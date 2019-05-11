@@ -2,7 +2,7 @@
 Import
 */
     const mongoose = require('mongoose');
-    const MONGO_URL = 'mongodb://admin:admin@cluster0-npcjl.mongodb.net/jaser'
+    const MONGO_URL = 'mongodb://admin:admin@cluster0-npcjl.mongodb.net/jaser?retryWrites=true'
 //
 
 /*
